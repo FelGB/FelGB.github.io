@@ -9,7 +9,7 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="/css/css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 </head>
 
 
@@ -294,6 +294,25 @@
     </footer>
 
     <script  src="/js/scrript.js"></script>
+
+     <!-- geolocalizacion -->
+
+     <script>
+
+        $(document).ready(function(){
+                $.ajax({
+                    type:'POST',
+                    url:"https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDdEywG_zNtvFxXDSBlq30l2w63ao_dsYU",
+                    success:function(res){
+                        alert("lat="+res['location']['lat']+" lng="+res['location']['lng']);
+                    },
+                    error:function(xhr,textStatus,thError){
+                        alert(JSON.stringify(xhr));
+                    }
+                })
+            });
+
+    </script>
     
 </body>
 </html>
