@@ -59,10 +59,10 @@ function efectoHabilidades(){
          habilidades[1].classList.add("javascript");
          habilidades[2].classList.add("Bootstrap");
          habilidades[3].classList.add("Angular");
-         habilidades[4].classList.add("Netcore");
-         habilidades[5].classList.add("css");
-         habilidades[6].classList.add("Photoshop");
-         habilidades[7].classList.add("wordpress");
+        //  habilidades[4].classList.add("Netcore");
+        //  habilidades[5].classList.add("css");
+        //  habilidades[6].classList.add("Photoshop");
+         habilidades[4].classList.add("wordpress");
     }
 
 
